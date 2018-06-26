@@ -13,7 +13,6 @@ class User extends Authenticatable
 
     /**
      * The attributes that are mass assignable.
-     *
      * @var array
      */
     protected $fillable = [
@@ -29,3 +28,4 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 }
+//https://github.com/nengkelan/al-mushlihin-qwertyuiopasdfghjklzxcvbnm-1234567890
