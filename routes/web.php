@@ -24,5 +24,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('users','UserController');
 
     Route::resource('pengumumans','PengumumanController');
+    Route::get('get-pengumuman','PengumumanController@getData')->name('get.pengumuman');
+    /*Route::get('index','PengumumanController@index')->name('index');*/
+
 
 });

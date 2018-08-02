@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Pengumuman;
+use Yajra\Datatables\Datatables;
 
 class PengumumanController extends Controller
 {
@@ -22,11 +23,16 @@ class PengumumanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+    public function getData()
+    {
+        return Datatables::of(Pengumuman::query())->make(true);
+    }
+    
     public function index()
     {
-        $pengumumans = Pengumuman::latest()->paginate(5);
-        return view('pengumumans.index',compact('pengumumans'))
-               ->with('i', (request()->input('page', 1) - 1) * 5);
+        
+        return view('pengumumans.index');
     }
 
     /**

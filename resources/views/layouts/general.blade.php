@@ -60,10 +60,10 @@
 
 </div>
 
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 @yield('bawah') 
 <!-- Vendor -->
-        <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('vendor/jquery.appear/jquery.appear.min.js') }}"></script>
         <script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}"></script>
         <script src="{{ asset('vendor/jquery-cookie/jquery-cookie.min.js') }}"></script>
