@@ -1,8 +1,7 @@
 @extends('layouts.general')
 
 @section('atas')
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
- <link  href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css') }}"> 
 @endsection
 
 
@@ -38,7 +37,7 @@
 
 
 @section('bawah')
- <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+ <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
     <script type="text/javascript">
     $(function() {
         var oTable = $('#table').DataTable({
